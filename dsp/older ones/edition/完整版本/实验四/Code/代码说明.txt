@@ -1,0 +1,7 @@
+1. filter & compare.m 文件中的代码包含了
+
+(1) matlab 实现级联滤波器
+
+(2) 比较 matlab 和 DSP 的计算结果，进行精度分析
+
+2. fft_compare.m 文件中对 fft 运算的精度进行了讨论
