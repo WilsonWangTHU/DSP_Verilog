@@ -24,10 +24,10 @@
 module CommModem(
   /*	System IO			*/
   input [3:0] origin,
-  input [7:0] received,
+  input [7:0] received,  /* bounded to the AD */
   input sys_clk,
   input reset,
-  output wire [7:0] sent,
+  output wire [7:0] sent,  /* bounded to the DA */
   output wire [7:0] led_1,		/*	1st row of leds 	*/
   output wire [7:0] led_2		/* 2nd row of leds 	*/
   );
@@ -47,7 +47,7 @@ module CommModem(
   //assign led_1 = led_1_reg;
   //assign led_2 = {led_1_reg[7], led_1_reg[6], led_1_reg[5], led_1_reg[4], led_1_reg[3], led_1_reg[2], led_1_reg[1], led_1_reg[0]};
 
-  reg [3:0] decoded_results;
+  wire [3:0] decoded_results;
   reg [7:0]	led_1_reg, led_2_reg;  /* this two variables are for debug purposes 
                                       and will be used as the */
   
@@ -60,15 +60,10 @@ module CommModem(
   wire clk_64, clk_128, clk_256, clk_512, clk_30, clk_8k, clk_slow;
   
   wire ENCA, ENCB;
-  //assign DB = DA;
   
   assign ENCA = clk_64;
   assign ENCB = clk_64;
   
-  //assign DB = DA;
-  /* 
-   *	Generate clk signals
-   */
   ClkGen cg(
     .sys_clk	(	sys_clk	),
     .reset		(	reset		),
@@ -87,10 +82,17 @@ module CommModem(
 	  .clk_slow  (  clk_slow )
   );
   
-  /*
-	* The (8, 4) hamming code.
-  */
+  hamm_encoder test_encoder2(
+    .out(sent),
+    .in(origin),
+    .clk(sys_clk),
+    .reset(reset));
   
+  hamm_decoder test_decoder2(
+    .out(received),
+    .in(decoded_results),
+    .clk(sys_clk),
+    .reset(reset));
   
   /* 
    * Generate led show

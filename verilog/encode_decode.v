@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module test_encode_decode;
+module test_encode_decode_outof_module;
 
 reg sys_clk;
 reg reset;
@@ -41,7 +41,7 @@ end
 
 always
 begin
-  #50
+  #57
   test_input = test_input + 1;
 end 
  

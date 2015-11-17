@@ -23,6 +23,7 @@ hamm_decoder test_decoder(
       
 initial
 begin
+       test_input = 0;
        sys_clk = 1'b0;
        reset = 1'b1;
        #10
@@ -40,7 +41,7 @@ end
 
 always
 begin
-  #50
+  #57
   test_input = test_input + 1;
 end 
  

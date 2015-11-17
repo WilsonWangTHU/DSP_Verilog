@@ -1,16 +1,16 @@
-C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/CommModem.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/CommModem.v
-Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
--- Compiling module CommModem
-
-Top level modules:
-	CommModem
-
-} {} {}} C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v
+C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v
 Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
 -- Compiling module hamm_decoder
 
 Top level modules:
 	hamm_decoder
+
+} {} {}} C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v
+Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
+-- Compiling module test_encode_decode
+
+Top level modules:
+	test_encode_decode
 
 } {} {}} C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Encoder.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Encoder.v
 Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
@@ -19,18 +19,18 @@ Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
 Top level modules:
 	hamm_encoder
 
-} {} {}} C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v
-Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
--- Compiling module test_ask
-
-Top level modules:
-	test_ask
-
 } {} {}} C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/ClkGen.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/ClkGen.v
 Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
 -- Compiling module ClkGen
 
 Top level modules:
 	ClkGen
+
+} {} {}} C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/encode_decode.v {1 {vlog -work work -nocovercells C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/encode_decode.v
+Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
+-- Compiling module test_encode_decode_outof_module
+
+Top level modules:
+	test_encode_decode_outof_module
 
 } {} {}}

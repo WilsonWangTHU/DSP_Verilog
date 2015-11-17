@@ -21,80 +21,47 @@ Z11 n@clk@gen
 !s85 0
 !s101 -O0
 vCommModem
-Z12 IBPjiI=8aFZ830`OM2aa1F1
-Z13 VFbmR<zj93VX9z9<HF3U^k2
+Z12 !s100 h7nRhQol6n:M@;eHCjPcK2
+Z13 I6z8]?:[06WFogO_;9bBlN2
+Z14 VFbmR<zj93VX9z9<HF3U^k2
 R4
-Z14 w1447797890
-Z15 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/CommModem.v
-Z16 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/CommModem.v
+Z15 w1447802117
+Z16 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/CommModem.v
+Z17 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/CommModem.v
 L0 24
 R8
 r1
 31
 R9
 R10
-Z17 n@comm@modem
-Z18 !s100 mBmIWQ;oYW?BdX2=nn6O>2
+Z18 n@comm@modem
 !s85 0
 !s101 -O0
 vhamm_decoder
-Z19 IJCU8bXO`P8b]`emCN3W5>2
-Z20 Vkhk;U09Yh]kllkF0<_O8N0
+Z19 !s100 IiND;z9mdRRz^Ye^lh7mS3
+Z20 I[enX^jD3c@8L9HN>8J7Ce0
+Z21 Vkhk;U09Yh]kllkF0<_O8N0
 R4
-Z21 w1447797830
-Z22 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v
-Z23 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v
+Z22 w1447800898
+Z23 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v
+Z24 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v
 L0 6
 R8
 r1
 31
 R9
 R10
-Z24 !s100 `274e;H?6i>ZoKoFU6R`c1
 !s85 0
 !s101 -O0
 vhamm_encoder
-Z25 I;UF88?_N@9gUenC1H;0Z`0
-Z26 VQiCCG8icQ]BIehXf60Ah71
+Z25 !s100 ^2c46=ARhD:Td;o43UT=Y1
+Z26 I;UF88?_N@9gUenC1H;0Z`0
+Z27 VQiCCG8icQ]BIehXf60Ah71
 R4
-Z27 w1447797807
-Z28 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Encoder.v
-Z29 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Encoder.v
+Z28 w1447797807
+Z29 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Encoder.v
+Z30 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Encoder.v
 L0 6
-R8
-r1
-31
-R9
-R10
-Z30 !s100 ^2c46=ARhD:Td;o43UT=Y1
-!s85 0
-!s101 -O0
-vLED_FLOW
-Z31 I89<`>D3zcICJc]?ZdFAT83
-Z32 VncEkh?6njMdHL`NO6bLnI3
-R4
-Z33 w1447786707
-Z34 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v
-Z35 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v
-L0 3
-R8
-r1
-31
-R9
-R10
-Z36 n@l@e@d_@f@l@o@w
-Z37 !s100 XXH=TW]Z@L8NV=0ofjXoS1
-!s85 0
-!s101 -O0
-vtest_ask
-Z38 !s100 fado5UWe5^oW;VS;SEHjA0
-Z39 IcQ6;V4J@FQLZ:Rh4aH;K63
-Z40 V7SACDW:IQe<fI2Le>8CzR3
-R4
-Z41 w1447786814
-R34
-R35
-L0 3
 R8
 r1
 31
@@ -103,13 +70,29 @@ R10
 !s85 0
 !s101 -O0
 vtest_encode_decode
-!s100 1SKVJN1WY6ic?9jdkh;S:1
-I48?1KAiVM]^W5z@43VQZA1
-Z42 VZn4mUId61el1D5MY5[MYK1
+Z31 I52:9NebeP?TRj5L0z=Gde3
+Z32 VZn4mUId61el1D5MY5[MYK1
 R4
-w1447798519
-Z43 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/encode_decode.v
-Z44 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/encode_decode.v
+Z33 w1447802418
+Z34 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v
+Z35 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/testbench.v
+L0 3
+R8
+r1
+31
+R9
+R10
+Z36 !s100 l]aNPUJEZaLk_j`4V501C3
+!s85 0
+!s101 -O0
+vtest_encode_decode_outof_module
+Z37 !s100 6zV<K;3E_fe4LQANizcBf1
+Z38 I1gH]zX<@Vn5gZ@EJP`C4I2
+Z39 VP4[]9BVjV?ma7Ib`2S5Ah1
+R4
+Z40 w1447801873
+Z41 8C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/encode_decode.v
+Z42 FC:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/encode_decode.v
 L0 3
 R8
 r1
