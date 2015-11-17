@@ -1,0 +1,134 @@
+Flow report for CommModem
+Thu Oct 29 20:38:24 2015
+Quartus II 64-Bit Version 10.1 Build 153 11/29/2010 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Flow Summary                                                                   ;
++------------------------------------+-------------------------------------------+
+; Flow Status                        ; Successful - Thu Oct 29 20:38:20 2015     ;
+; Quartus II 64-Bit Version          ; 10.1 Build 153 11/29/2010 SJ Full Version ;
+; Revision Name                      ; CommModem                                 ;
+; Top-level Entity Name              ; CommModem                                 ;
+; Family                             ; Cyclone IV E                              ;
+; Device                             ; EP4CE75F23C8                              ;
+; Timing Models                      ; Final                                     ;
+; Total logic elements               ; 36 / 75,408 ( < 1 % )                     ;
+;     Total combinational functions  ; 33 / 75,408 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 33 / 75,408 ( < 1 % )                     ;
+; Total registers                    ; 33                                        ;
+; Total pins                         ; 34 / 293 ( 12 % )                         ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 0 / 2,810,880 ( 0 % )                     ;
+; Embedded Multiplier 9-bit elements ; 0 / 400 ( 0 % )                           ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                             ;
++------------------------------------+-------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/29/2015 20:37:53 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; CommModem           ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                     ;
++---------------------------------------+-------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                       ; Value                                                             ; Default Value ; Entity Name ; Section Id ;
++---------------------------------------+-------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID                 ; 128527095766454.144614747312896                                   ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                                                                ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                                                                 ; --            ; --          ; --         ;
+; MISC_FILE                             ; C:/Users/zxd/Desktop/CommModem/CommModem.dpf                      ; --            ; --          ; --         ;
+; MISC_FILE                             ; O:/CommModem/CommModem.dpf                                        ; --            ; --          ; --         ;
+; MISC_FILE                             ; H:/CommModem/CommModem.dpf                                        ; --            ; --          ; --         ;
+; MISC_FILE                             ; C:/Users/user/Desktop/CommModem/CommModem.dpf                     ; --            ; --          ; --         ;
+; MISC_FILE                             ; C:/Users/zxd/Desktop/CommModem_9_14_17_09/CommModem/CommModem.dpf ; --            ; --          ; --         ;
+; MISC_FILE                             ; C:/Users/zxd/Desktop/CommModem_9_14_18_10/CommModem/CommModem.dpf ; --            ; --          ; --         ;
+; MISC_FILE                             ; C:/Users/zxd/Desktop/CommModem_9_19_14_50/CommModem/CommModem.dpf ; --            ; --          ; --         ;
+; MISC_FILE                             ; C:/Users/thinkpad/Desktop/code/CommModem.dpf                      ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS        ; Half Signal Swing                                                 ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS        ; Half Signal Swing                                                 ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS       ; Half Vccio                                                        ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS       ; Half Vccio                                                        ; --            ; --          ; --         ;
+; PARTITION_COLOR                       ; 16764057                                                          ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL   ; PLACEMENT_AND_ROUTING                                             ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE                ; SOURCE                                                            ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL             ; None (CONSERVATIVE)                                               ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION         ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                             ; --            ; --          ; --         ;
+; SYNCHRONIZATION_REGISTER_CHAIN_LENGTH ; 2                                                                 ; 3             ; --          ; --         ;
++---------------------------------------+-------------------------------------------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 330 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:17     ; 1.3                     ; 576 MB              ; 00:00:15                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 282 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 403 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:20                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; thinkpad-THINK   ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; thinkpad-THINK   ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; thinkpad-THINK   ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; thinkpad-THINK   ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off CommModem -c CommModem
+quartus_fit --read_settings_files=off --write_settings_files=off CommModem -c CommModem
+quartus_asm --read_settings_files=off --write_settings_files=off CommModem -c CommModem
+quartus_sta CommModem -c CommModem
+
+
+
