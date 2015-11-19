@@ -31,5 +31,3 @@ static fract16 h[BASE_TAPLENGTH] = {
 4851
 };
 
-
-
