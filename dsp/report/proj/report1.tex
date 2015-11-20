@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{beramono}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{color}
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.9,0,0}
+
+\usepackage{listings}
+\lstset{language=C,
+showspaces=false,
+showtabs=false,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+frame=single,
+escapeinside={(*@}{@*)},
+commentstyle=\color{greencomments},
+keywordstyle=\color{bluekeywords}\bfseries,
+stringstyle=\color{redstrings},
+basicstyle=\ttfamily
+}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\title{DSP课程大作业\\
+双音多频信号发生和检测}
+\author{王亭午，2012011018，无210班\\
+杨思怡，
+杨璐馨
+}
+\date{2015年11月20号}
+\maketitle
+\section{实验目的}
+\section{实验原理}
+\section{2.实验难点，实验分工，验收方法和指标}
+\section{实验内容}
+\subsection{DTMF信号的产生}
+\subsection{DTMF信号的生成}
+
+
+
+\end{CJK}
+\end{document}
+\begin{lstlisting}
+void Process_Data(void) {
+	int iM0 = iChannel0LeftIn + iChannel0RightIn;
+	int iS0 = iChannel0RightIn - iChannel0LeftIn;
+	iChannel0LeftOut = iM0;
+	iChannel0RightOut = iS0;
+	
+	int iM1 = iChannel1LeftIn + iChannel1RightIn;
+	int iS1 = iChannel1RightIn - iChannel1LeftIn;
+	iChannel1LeftOut = iM1;
+	iChannel1RightOut = iS1;
+}
+\end{lstlisting}
+enter image description here
