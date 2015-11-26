@@ -27,26 +27,21 @@ module CommModem(
   input [7:0] received,  /* bounded to the AD */
   input sys_clk,
   input reset,
+  input [3:0] error,
   output wire [7:0] sent,  /* bounded to the DA */
   output wire [7:0] led_1,		/*	1st row of leds 	*/
-  output wire [7:0] led_2		/* 2nd row of leds 	*/
+  output wire [7:0] led_2,		/* 2nd row of leds 	*/
+  output wire WRT1,
+  output wire WRT2,
+  output wire ENCA,
+  output wire ENCB
   );
   
-/*
-module CommModem(
-  input [3:0] origin,
-  input sys_clk,
-  input reset,
-  input [7:0] DA,
-  output wire [7:0] DB,
-  output wire [7:0] led_1,	
-  output wire [7:0] led_2	
-  );*/
+  assign WRT1 = sys_clk;
+  assign WRT2 = sys_clk;
+  assign ENCA = sys_clk;
+  assign ENCB = sys_clk;
   
-  // for debug purpose
-  //assign led_1 = led_1_reg;
-  //assign led_2 = {led_1_reg[7], led_1_reg[6], led_1_reg[5], led_1_reg[4], led_1_reg[3], led_1_reg[2], led_1_reg[1], led_1_reg[0]};
-
   wire [3:0] decoded_results;
   reg [7:0]	led_1_reg, led_2_reg;  /* this two variables are for debug purposes 
                                       and will be used as the */
@@ -56,13 +51,12 @@ module CommModem(
   assign led_2[7:4] = origin;           /* the original input */
   assign led_1 = received;
   
+  
+  
+  
   wire clk_1, clk_2, clk_4, clk_8, clk_16, clk_32;
   wire clk_64, clk_128, clk_256, clk_512, clk_30, clk_8k, clk_slow;
   
-  wire ENCA, ENCB;
-  
-  assign ENCA = clk_64;
-  assign ENCB = clk_64;
   
   ClkGen cg(
     .sys_clk	(	sys_clk	),
@@ -81,6 +75,36 @@ module CommModem(
 	  .clk_8k		(	clk_8k	),
 	  .clk_slow  (  clk_slow )
   );
+  
+  /*
+  
+  If we don't use the ad da part
+  
+  */
+  
+  //wire [7:0] received;
+  reg [3:0] temp_received;
+  //assign received[7:4] = sent[7:4];
+  //assign received[3:0] = temp_received[3:0];
+  
+  always @(posedge clk_slow or negedge reset)
+  begin
+		if (!reset) begin
+			temp_received[0] <= 1'b0;
+			temp_received[1] <= 1'b0;
+			temp_received[2] <= 1'b0;
+			temp_received[3] <= 1'b0;
+		end
+		else begin
+			temp_received[0] <= sent[0] + error[0];
+			temp_received[1] <= sent[1] + error[1];
+			temp_received[2] <= sent[2] + error[2];
+			temp_received[3] <= sent[3] + error[3];
+		end
+  end
+  
+  /*
+  */
   
   hamm_encoder test_encoder2(
     .out(sent),

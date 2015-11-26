@@ -52,6 +52,22 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_global_assignment -name MISC_FILE "C:/Users/zxd/Desktop/CommModem/CommModem.dpf"
+
+
+
+set_location_assignment PIN_W21 -to origin[0]
+set_location_assignment PIN_Y22 -to origin[1]
+set_location_assignment PIN_V21 -to origin[2]
+set_location_assignment PIN_W22 -to origin[3]
+
+set_location_assignment PIN_M22 -to error[0]
+set_location_assignment PIN_M21 -to error[1]
+set_location_assignment PIN_R20 -to error[2]
+set_location_assignment PIN_M19 -to error[3]
+
+
+
+
 set_location_assignment PIN_B21 -to TestD[0]
 set_location_assignment PIN_C20 -to TestD[1]
 set_location_assignment PIN_B19 -to TestD[2]
@@ -108,14 +124,7 @@ set_location_assignment PIN_B7 -to DR
 set_location_assignment PIN_A10 -to DX
 set_location_assignment PIN_A9 -to FSX
 set_global_assignment -name MISC_FILE "C:/Users/user/Desktop/CommModem/CommModem.dpf"
-set_location_assignment PIN_W14 -to DBP1[0]
-set_location_assignment PIN_V14 -to DBP1[1]
-set_location_assignment PIN_Y14 -to DBP1[2]
-set_location_assignment PIN_W15 -to DBP1[3]
-set_location_assignment PIN_V15 -to DBP1[4]
-set_location_assignment PIN_W17 -to DBP1[5]
-set_location_assignment PIN_T15 -to DBP1[6]
-set_location_assignment PIN_T18 -to DBP1[7]
+
 set_location_assignment PIN_W7 -to DBP2[0]
 set_location_assignment PIN_V8 -to DBP2[1]
 set_location_assignment PIN_W8 -to DBP2[2]
@@ -124,15 +133,30 @@ set_location_assignment PIN_Y8 -to DBP2[4]
 set_location_assignment PIN_Y10 -to DBP2[5]
 set_location_assignment PIN_V10 -to DBP2[6]
 set_location_assignment PIN_V11 -to DBP2[7]
+
+set_location_assignment PIN_W14 -to sent[0]
+set_location_assignment PIN_V14 -to sent[1]
+set_location_assignment PIN_Y14 -to sent[2]
+set_location_assignment PIN_W15 -to sent[3]
+
+set_location_assignment PIN_V15 -to sent[4]
+set_location_assignment PIN_W17 -to sent[5]
+set_location_assignment PIN_T15 -to sent[6]
+set_location_assignment PIN_T18 -to sent[7]
+
 set_location_assignment PIN_W13 -to WRT1
 set_location_assignment PIN_U12 -to WRT2
-set_location_assignment PIN_AA4 -to DA[7]
-set_location_assignment PIN_AA5 -to DA[6]
-set_location_assignment PIN_AB5 -to DA[5]
-set_location_assignment PIN_AA6 -to DA[4]
-set_location_assignment PIN_AB6 -to DA[3]
-set_location_assignment PIN_AA7 -to DA[2]
-set_location_assignment PIN_AB7 -to DA[1]
+
+set_location_assignment PIN_AA4 -to received[7]
+set_location_assignment PIN_AA5 -to received[6]
+set_location_assignment PIN_AB5 -to received[5]
+set_location_assignment PIN_AA6 -to received[4]
+
+set_location_assignment PIN_AB6 -to received[3]
+set_location_assignment PIN_AA7 -to received[2]
+set_location_assignment PIN_AB7 -to received[1]
+set_location_assignment PIN_Y7 -to received[0]
+
 set_location_assignment PIN_W6 -to DB[7]
 set_location_assignment PIN_W10 -to DB[6]
 set_location_assignment PIN_Y4 -to DB[5]
@@ -141,10 +165,13 @@ set_location_assignment PIN_AA9 -to DB[3]
 set_location_assignment PIN_AB9 -to DB[2]
 set_location_assignment PIN_AA8 -to DB[1]
 set_location_assignment PIN_AB8 -to DB[0]
+
 set_location_assignment PIN_Y3 -to ENCA
 set_location_assignment PIN_Y6 -to ENCB
+
 set_location_assignment PIN_B2 -to PAM_CLK
-set_location_assignment PIN_Y7 -to DA[0]
+
+
 set_location_assignment PIN_F13 -to led_1[7]
 set_location_assignment PIN_J22 -to led_1[6]
 set_location_assignment PIN_F14 -to led_1[5]
@@ -161,19 +188,14 @@ set_location_assignment PIN_F17 -to led_2[3]
 set_location_assignment PIN_F19 -to led_2[2]
 set_location_assignment PIN_G18 -to led_2[1]
 set_location_assignment PIN_H20 -to led_2[0]
-set_global_assignment -name VERILOG_FILE dff2x2_tx.v
-set_global_assignment -name VERILOG_FILE i2c_slave_sp.v
-set_global_assignment -name VERILOG_FILE i2c_reg_top.v
-set_global_assignment -name VERILOG_FILE reg_dffcells.v
-set_global_assignment -name VERILOG_FILE PAMClk.v
-set_global_assignment -name VERILOG_FILE MArrayGen.v
-set_global_assignment -name VERILOG_FILE LedLight.v
-set_global_assignment -name VERILOG_FILE CommModem.v
-set_global_assignment -name VERILOG_FILE ClkGen.v
+
 set_location_assignment PIN_Y17 -to i2c_scl
 set_location_assignment PIN_AB17 -to i2c_sda
-set_global_assignment -name MISC_FILE "C:/Users/zxd/Desktop/CommModem_9_14_17_09/CommModem/CommModem.dpf"
-set_global_assignment -name MISC_FILE "C:/Users/zxd/Desktop/CommModem_9_14_18_10/CommModem/CommModem.dpf"
-set_global_assignment -name MISC_FILE "C:/Users/zxd/Desktop/CommModem_9_19_14_50/CommModem/CommModem.dpf"
+
 set_global_assignment -name MISC_FILE "C:/Users/thinkpad/Desktop/code/CommModem.dpf"
+
+set_global_assignment -name VERILOG_FILE hamming_Encoder.v
+set_global_assignment -name VERILOG_FILE hamming_Decoder.v
+set_global_assignment -name VERILOG_FILE CommModem.v
+set_global_assignment -name VERILOG_FILE ClkGen.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -56,6 +56,78 @@ ClkGen:cg
 
 # end
 # entity
+hamm_encoder
+# storage
+db|CommModem.(2).cnf
+db|CommModem.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hamming_encoder.v
+b56d9c918ab878be2ee8d6d6c5386375
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+hamm_encoder:test_encoder2
+}
+# macro_sequence
+
+# end
+# entity
+hamm_decoder
+# storage
+db|CommModem.(3).cnf
+db|CommModem.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hamming_decoder.v
+16bdcc5855c34b83facc0c42f369da
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+hamm_decoder:test_decoder2
+}
+# macro_sequence
+
+# end
+# entity
 CommModem
 # storage
 db|CommModem.(0).cnf
@@ -67,7 +139,7 @@ ON
 # case_sensitive
 # source_file
 commmodem.v
-24b3384fccf7d89c05c218aa561c1a5
+3ed75aa45b8ee5ae69b0bb6f25b714d4
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

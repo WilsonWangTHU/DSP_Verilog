@@ -12,10 +12,14 @@
     wire [2:0] s;
     reg [7:0] mask;
     
+    assign s[0] = out[7]^out[6]^out[5]^out[3];
+    assign s[1] = out[7]^out[6]^out[4]^out[2];
+    assign s[2] = out[7]^out[5]^out[4]^out[1];
+    /*
     assign s[0] = out[0]^out[1]^out[2]^out[4];
     assign s[1] = out[0]^out[1]^out[3]^out[5];
     assign s[2] = out[0]^out[2]^out[3]^out[6];
-    
+    */
     always@(posedge clk or negedge reset)
     begin
 		case (s)

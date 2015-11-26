@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CommModem
-Thu Oct 29 20:37:57 2015
+Thu Nov 26 21:46:12 2015
 Quartus II 64-Bit Version 10.1 Build 153 11/29/2010 SJ Full Version
 
 
@@ -13,11 +13,10 @@ Quartus II 64-Bit Version 10.1 Build 153 11/29/2010 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Port Connectivity Checks: "ClkGen:cg"
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Port Connectivity Checks: "ClkGen:cg"
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 29 20:37:57 2015     ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 26 21:46:12 2015     ;
 ; Quartus II 64-Bit Version          ; 10.1 Build 153 11/29/2010 SJ Full Version ;
 ; Revision Name                      ; CommModem                                 ;
 ; Top-level Entity Name              ; CommModem                                 ;
 ; Family                             ; Cyclone IV E                              ;
-; Total logic elements               ; 34                                        ;
-;     Total combinational functions  ; 33                                        ;
-;     Dedicated logic registers      ; 33                                        ;
-; Total registers                    ; 33                                        ;
-; Total pins                         ; 34                                        ;
+; Total logic elements               ; 10                                        ;
+;     Total combinational functions  ; 10                                        ;
+;     Dedicated logic registers      ; 0                                         ;
+; Total registers                    ; 0                                         ;
+; Total pins                         ; 46                                        ;
 ; Total virtual pins                 ; 0                                         ;
 ; Total memory bits                  ; 0                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                         ;
@@ -160,64 +159,57 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                   ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path               ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+
-; CommModem.v                      ; yes             ; User Verilog HDL File  ; C:/Users/thinkpad/Desktop/code/CommModem.v ;
-; ClkGen.v                         ; yes             ; User Verilog HDL File  ; C:/Users/thinkpad/Desktop/code/ClkGen.v    ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+
+; hamming_Encoder.v                ; yes             ; User Verilog HDL File  ; C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Encoder.v ;
+; hamming_Decoder.v                ; yes             ; User Verilog HDL File  ; C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/hamming_Decoder.v ;
+; CommModem.v                      ; yes             ; User Verilog HDL File  ; C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/CommModem.v       ;
+; ClkGen.v                         ; yes             ; User Verilog HDL File  ; C:/Users/thinkpad/Documents/GitHub/DSP_Verilog/verilog/ClkGen.v          ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 34          ;
-;                                             ;             ;
-; Total combinational functions               ; 33          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 5           ;
-;     -- 3 input functions                    ; 3           ;
-;     -- <=2 input functions                  ; 25          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 13          ;
-;     -- arithmetic mode                      ; 20          ;
-;                                             ;             ;
-; Total registers                             ; 33          ;
-;     -- Dedicated logic registers            ; 33          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 34          ;
-; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 33          ;
-; Total fan-out                               ; 239         ;
-; Average fan-out                             ; 1.78        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 10              ;
+;                                             ;                 ;
+; Total combinational functions               ; 10              ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 7               ;
+;     -- 3 input functions                    ; 3               ;
+;     -- <=2 input functions                  ; 0               ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 10              ;
+;     -- arithmetic mode                      ; 0               ;
+;                                             ;                 ;
+; Total registers                             ; 0               ;
+;     -- Dedicated logic registers            ; 0               ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 46              ;
+; Maximum fan-out node                        ; origin[3]~input ;
+; Maximum fan-out                             ; 6               ;
+; Total fan-out                               ; 111             ;
+; Average fan-out                             ; 1.09            ;
++---------------------------------------------+-----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                          ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------+--------------+
-; |CommModem                 ; 33 (8)            ; 33 (8)       ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |CommModem           ;              ;
-;    |ClkGen:cg|             ; 25 (25)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CommModem|ClkGen:cg ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
+; |CommModem                      ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |CommModem                            ;              ;
+;    |hamm_decoder:test_decoder2| ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CommModem|hamm_decoder:test_decoder2 ;              ;
+;    |hamm_encoder:test_encoder2| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CommModem|hamm_encoder:test_encoder2 ;              ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; ClkGen:cg|count_2[8]                  ; Lost fanout        ;
-; Total Number of Removed Registers = 1 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -225,34 +217,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
-; Number of registers using Synchronous Clear  ; 8     ;
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ClkGen:cg"                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; clk_1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_8   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_16  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_32  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_64  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_128 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_256 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_512 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_30  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; clk_8k  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ClkGen:cg"                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; clk_1    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_2    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_4    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_8    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_16   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_32   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_64   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_128  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_256  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_512  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_30   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_8k   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; clk_slow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -260,7 +253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -270,39 +263,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 10.1 Build 153 11/29/2010 SJ Full Version
-    Info: Processing started: Thu Oct 29 20:37:52 2015
+    Info: Processing started: Thu Nov 26 21:46:11 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CommModem -c CommModem
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
-Warning: Can't analyze file -- file dff2x2_tx.v is missing
-Warning: Can't analyze file -- file i2c_slave_sp.v is missing
-Warning: Can't analyze file -- file i2c_reg_top.v is missing
-Warning: Can't analyze file -- file reg_dffcells.v is missing
-Warning: Can't analyze file -- file PAMClk.v is missing
-Warning: Can't analyze file -- file MArrayGen.v is missing
-Warning: Can't analyze file -- file LedLight.v is missing
+Info: Found 1 design units, including 1 entities, in source file hamming_encoder.v
+    Info: Found entity 1: hamm_encoder
+Info: Found 1 design units, including 1 entities, in source file hamming_decoder.v
+    Info: Found entity 1: hamm_decoder
 Info: Found 1 design units, including 1 entities, in source file commmodem.v
     Info: Found entity 1: CommModem
 Info: Found 1 design units, including 1 entities, in source file clkgen.v
     Info: Found entity 1: ClkGen
 Info: Elaborating entity "CommModem" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at CommModem.v(17): object "ENCA" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at CommModem.v(17): object "ENCB" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at CommModem.v(86): object "temp_received" assigned a value but never read
 Info: Elaborating entity "ClkGen" for hierarchy "ClkGen:cg"
 Warning (10230): Verilog HDL assignment warning at ClkGen.v(46): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at ClkGen.v(126): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at ClkGen.v(148): truncated value with size 32 to match size of target (9)
+Info: Elaborating entity "hamm_encoder" for hierarchy "hamm_encoder:test_encoder2"
+Info: Elaborating entity "hamm_decoder" for hierarchy "hamm_decoder:test_decoder2"
 Info: Timing-Driven Synthesis is running
-Info: 1 registers lost all their fanouts during netlist optimizations. The first 1 are displayed below.
-    Info: Register "ClkGen:cg|count_2[8]" lost all its fanouts during netlist optimizations.
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Info: Implemented 68 device resources after synthesis - the final resource count might be different
-    Info: Implemented 10 input pins
-    Info: Implemented 24 output pins
-    Info: Implemented 34 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 330 megabytes
-    Info: Processing ended: Thu Oct 29 20:37:57 2015
-    Info: Elapsed time: 00:00:05
+Warning: Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "reset"
+    Warning (15610): No output dependent on input pin "error[0]"
+    Warning (15610): No output dependent on input pin "error[1]"
+    Warning (15610): No output dependent on input pin "error[2]"
+    Warning (15610): No output dependent on input pin "error[3]"
+Info: Implemented 56 device resources after synthesis - the final resource count might be different
+    Info: Implemented 18 input pins
+    Info: Implemented 28 output pins
+    Info: Implemented 10 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 329 megabytes
+    Info: Processing ended: Thu Nov 26 21:46:12 2015
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

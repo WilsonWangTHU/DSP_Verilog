@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Oct 29 20:38:16 2015
+Fitter Status : Successful - Thu Nov 26 21:46:26 2015
 Quartus II 64-Bit Version : 10.1 Build 153 11/29/2010 SJ Full Version
 Revision Name : CommModem
 Top-level Entity Name : CommModem
 Family : Cyclone IV E
 Device : EP4CE75F23C8
 Timing Models : Final
-Total logic elements : 36 / 75,408 ( < 1 % )
-    Total combinational functions : 33 / 75,408 ( < 1 % )
-    Dedicated logic registers : 33 / 75,408 ( < 1 % )
-Total registers : 33
-Total pins : 34 / 293 ( 12 % )
+Total logic elements : 10 / 75,408 ( < 1 % )
+    Total combinational functions : 10 / 75,408 ( < 1 % )
+    Dedicated logic registers : 0 / 75,408 ( 0 % )
+Total registers : 0
+Total pins : 46 / 293 ( 16 % )
 Total virtual pins : 0
 Total memory bits : 0 / 2,810,880 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 400 ( 0 % )

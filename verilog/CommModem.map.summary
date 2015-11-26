@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Oct 29 20:37:57 2015
+Analysis & Synthesis Status : Successful - Thu Nov 26 21:46:12 2015
 Quartus II 64-Bit Version : 10.1 Build 153 11/29/2010 SJ Full Version
 Revision Name : CommModem
 Top-level Entity Name : CommModem
 Family : Cyclone IV E
-Total logic elements : 34
-    Total combinational functions : 33
-    Dedicated logic registers : 33
-Total registers : 33
-Total pins : 34
+Total logic elements : 10
+    Total combinational functions : 10
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 46
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
